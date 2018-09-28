@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.name         = "LFDrawView"
   s.version      = "0.0.5"
   s.summary      = "圆角绘制"
-    swift_version = "3.2"
+  swift_version = "3.2"
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
@@ -116,8 +116,8 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  s.framework  = "CoreGraphics"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
+#s.framework  = "CoreGraphics"
+s.frameworks = "CoreGraphics", "UIKit"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
