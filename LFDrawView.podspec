@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LFDrawView"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "圆角绘制"
 
   # This description is used to generate tags and improve search results.
