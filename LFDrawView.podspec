@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "LFDrawView"
-  s.version      = "0.0.1"
+  s.version      = "0.0.3"
   s.summary      = "圆角绘制"
 
   # This description is used to generate tags and improve search results.
@@ -116,7 +116,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
+  s.framework  = "CoreGraphics"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"

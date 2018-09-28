@@ -12,10 +12,11 @@
 		583E3597215DD7CE00B8FDE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 583E3595215DD7CE00B8FDE8 /* Main.storyboard */; };
 		583E3599215DD7D200B8FDE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 583E3598215DD7D200B8FDE8 /* Assets.xcassets */; };
 		583E359C215DD7D200B8FDE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 583E359A215DD7D200B8FDE8 /* LaunchScreen.storyboard */; };
-		583E35A8215DD7E500B8FDE8 /* LFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583E35A4215DD7E500B8FDE8 /* LFButton.swift */; };
-		583E35A9215DD7E500B8FDE8 /* LFImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583E35A5215DD7E500B8FDE8 /* LFImageView.swift */; };
-		583E35AA215DD7E500B8FDE8 /* LFLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583E35A6215DD7E500B8FDE8 /* LFLabel.swift */; };
-		583E35AB215DD7E500B8FDE8 /* LFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583E35A7215DD7E500B8FDE8 /* LFView.swift */; };
+		583E35B1215DDE3600B8FDE8 /* LFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583E35AD215DDE3600B8FDE8 /* LFButton.swift */; };
+		583E35B2215DDE3600B8FDE8 /* LFImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583E35AE215DDE3600B8FDE8 /* LFImageView.swift */; };
+		583E35B3215DDE3600B8FDE8 /* LFLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583E35AF215DDE3600B8FDE8 /* LFLabel.swift */; };
+		583E35B4215DDE3600B8FDE8 /* LFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583E35B0215DDE3600B8FDE8 /* LFView.swift */; };
+		583E35B6215DDE7400B8FDE8 /* LFDrawView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 583E35B5215DDE7300B8FDE8 /* LFDrawView.podspec */; };
 		5DA90223E12572374EED1BFB /* Pods_LFDrawView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7727F6BA80EE0A067D7723C /* Pods_LFDrawView.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,10 +28,11 @@
 		583E3598215DD7D200B8FDE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		583E359B215DD7D200B8FDE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		583E359D215DD7D200B8FDE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		583E35A4215DD7E500B8FDE8 /* LFButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFButton.swift; sourceTree = "<group>"; };
-		583E35A5215DD7E500B8FDE8 /* LFImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFImageView.swift; sourceTree = "<group>"; };
-		583E35A6215DD7E500B8FDE8 /* LFLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFLabel.swift; sourceTree = "<group>"; };
-		583E35A7215DD7E500B8FDE8 /* LFView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFView.swift; sourceTree = "<group>"; };
+		583E35AD215DDE3600B8FDE8 /* LFButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFButton.swift; sourceTree = "<group>"; };
+		583E35AE215DDE3600B8FDE8 /* LFImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFImageView.swift; sourceTree = "<group>"; };
+		583E35AF215DDE3600B8FDE8 /* LFLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFLabel.swift; sourceTree = "<group>"; };
+		583E35B0215DDE3600B8FDE8 /* LFView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFView.swift; sourceTree = "<group>"; };
+		583E35B5215DDE7300B8FDE8 /* LFDrawView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LFDrawView.podspec; sourceTree = "<group>"; };
 		A7727F6BA80EE0A067D7723C /* Pods_LFDrawView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LFDrawView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD914F5907F44CF1A8F30885 /* Pods-LFDrawView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFDrawView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LFDrawView/Pods-LFDrawView.debug.xcconfig"; sourceTree = "<group>"; };
 		ED06C84E2B1E7303332CFF90 /* Pods-LFDrawView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LFDrawView.release.xcconfig"; path = "Pods/Target Support Files/Pods-LFDrawView/Pods-LFDrawView.release.xcconfig"; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 		583E3585215DD7CE00B8FDE8 = {
 			isa = PBXGroup;
 			children = (
+				583E35B5215DDE7300B8FDE8 /* LFDrawView.podspec */,
 				583E3590215DD7CE00B8FDE8 /* LFDrawView */,
 				583E358F215DD7CE00B8FDE8 /* Products */,
 				3F9EBA8D90296AFC2FB365D4 /* Pods */,
@@ -78,7 +81,7 @@
 		583E3590215DD7CE00B8FDE8 /* LFDrawView */ = {
 			isa = PBXGroup;
 			children = (
-				583E35A3215DD7E500B8FDE8 /* Classes */,
+				583E35AC215DDE3600B8FDE8 /* Classes */,
 				583E3591215DD7CE00B8FDE8 /* AppDelegate.swift */,
 				583E3593215DD7CE00B8FDE8 /* ViewController.swift */,
 				583E3595215DD7CE00B8FDE8 /* Main.storyboard */,
@@ -89,16 +92,15 @@
 			path = LFDrawView;
 			sourceTree = "<group>";
 		};
-		583E35A3215DD7E500B8FDE8 /* Classes */ = {
+		583E35AC215DDE3600B8FDE8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				583E35A4215DD7E500B8FDE8 /* LFButton.swift */,
-				583E35A5215DD7E500B8FDE8 /* LFImageView.swift */,
-				583E35A6215DD7E500B8FDE8 /* LFLabel.swift */,
-				583E35A7215DD7E500B8FDE8 /* LFView.swift */,
+				583E35AD215DDE3600B8FDE8 /* LFButton.swift */,
+				583E35AE215DDE3600B8FDE8 /* LFImageView.swift */,
+				583E35AF215DDE3600B8FDE8 /* LFLabel.swift */,
+				583E35B0215DDE3600B8FDE8 /* LFView.swift */,
 			);
-			name = Classes;
-			path = ../../../../Desktop/Demo/DrewView/DrawView/Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		A40A3FBD0B949AF25D6366F0 /* Frameworks */ = {
@@ -169,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				583E359C215DD7D200B8FDE8 /* LaunchScreen.storyboard in Resources */,
+				583E35B6215DDE7400B8FDE8 /* LFDrawView.podspec in Resources */,
 				583E3599215DD7D200B8FDE8 /* Assets.xcassets in Resources */,
 				583E3597215DD7CE00B8FDE8 /* Main.storyboard in Resources */,
 			);
@@ -202,10 +205,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				583E35AB215DD7E500B8FDE8 /* LFView.swift in Sources */,
-				583E35A9215DD7E500B8FDE8 /* LFImageView.swift in Sources */,
-				583E35AA215DD7E500B8FDE8 /* LFLabel.swift in Sources */,
-				583E35A8215DD7E500B8FDE8 /* LFButton.swift in Sources */,
+				583E35B4215DDE3600B8FDE8 /* LFView.swift in Sources */,
+				583E35B2215DDE3600B8FDE8 /* LFImageView.swift in Sources */,
+				583E35B3215DDE3600B8FDE8 /* LFLabel.swift in Sources */,
+				583E35B1215DDE3600B8FDE8 /* LFButton.swift in Sources */,
 				583E3594215DD7CE00B8FDE8 /* ViewController.swift in Sources */,
 				583E3592215DD7CE00B8FDE8 /* AppDelegate.swift in Sources */,
 			);
@@ -357,7 +360,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LFDrawView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.leaf.LFDrawView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -373,7 +379,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LFDrawView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.leaf.LFDrawView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
