@@ -12,6 +12,10 @@
 		583E3597215DD7CE00B8FDE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 583E3595215DD7CE00B8FDE8 /* Main.storyboard */; };
 		583E3599215DD7D200B8FDE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 583E3598215DD7D200B8FDE8 /* Assets.xcassets */; };
 		583E359C215DD7D200B8FDE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 583E359A215DD7D200B8FDE8 /* LaunchScreen.storyboard */; };
+		583E35A8215DD7E500B8FDE8 /* LFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583E35A4215DD7E500B8FDE8 /* LFButton.swift */; };
+		583E35A9215DD7E500B8FDE8 /* LFImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583E35A5215DD7E500B8FDE8 /* LFImageView.swift */; };
+		583E35AA215DD7E500B8FDE8 /* LFLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583E35A6215DD7E500B8FDE8 /* LFLabel.swift */; };
+		583E35AB215DD7E500B8FDE8 /* LFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583E35A7215DD7E500B8FDE8 /* LFView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		583E3598215DD7D200B8FDE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		583E359B215DD7D200B8FDE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		583E359D215DD7D200B8FDE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		583E35A4215DD7E500B8FDE8 /* LFButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFButton.swift; sourceTree = "<group>"; };
+		583E35A5215DD7E500B8FDE8 /* LFImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFImageView.swift; sourceTree = "<group>"; };
+		583E35A6215DD7E500B8FDE8 /* LFLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFLabel.swift; sourceTree = "<group>"; };
+		583E35A7215DD7E500B8FDE8 /* LFView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LFView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 		583E3590215DD7CE00B8FDE8 /* LFDrawView */ = {
 			isa = PBXGroup;
 			children = (
+				583E35A3215DD7E500B8FDE8 /* Classes */,
 				583E3591215DD7CE00B8FDE8 /* AppDelegate.swift */,
 				583E3593215DD7CE00B8FDE8 /* ViewController.swift */,
 				583E3595215DD7CE00B8FDE8 /* Main.storyboard */,
@@ -62,6 +71,18 @@
 				583E359D215DD7D200B8FDE8 /* Info.plist */,
 			);
 			path = LFDrawView;
+			sourceTree = "<group>";
+		};
+		583E35A3215DD7E500B8FDE8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				583E35A4215DD7E500B8FDE8 /* LFButton.swift */,
+				583E35A5215DD7E500B8FDE8 /* LFImageView.swift */,
+				583E35A6215DD7E500B8FDE8 /* LFLabel.swift */,
+				583E35A7215DD7E500B8FDE8 /* LFView.swift */,
+			);
+			name = Classes;
+			path = ../../../../Desktop/Demo/DrewView/DrawView/Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +156,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				583E35AB215DD7E500B8FDE8 /* LFView.swift in Sources */,
+				583E35A9215DD7E500B8FDE8 /* LFImageView.swift in Sources */,
+				583E35AA215DD7E500B8FDE8 /* LFLabel.swift in Sources */,
+				583E35A8215DD7E500B8FDE8 /* LFButton.swift in Sources */,
 				583E3594215DD7CE00B8FDE8 /* ViewController.swift in Sources */,
 				583E3592215DD7CE00B8FDE8 /* AppDelegate.swift in Sources */,
 			);
@@ -284,6 +309,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LFDrawView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +327,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LFDrawView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
