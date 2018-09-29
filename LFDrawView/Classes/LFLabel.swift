@@ -8,24 +8,12 @@
 
 import UIKit
 import CoreGraphics
-enum LabelDrawType {
-    case drawType_fill
-    case drawType_Store
-    case drawType_none
-}
-enum LabelArcType {
-    case arcType_top
-    case arcType_bottom
-    case arcType_full
-    case arcType_none
-    case arcType_all
-    case arcType_round
-}
+
 class LFLabel: UILabel {
-    var  arcType = ButtonArcType.arcType_none
-    var  drawType = ButtonDrawType.drawType_none
+    var  arcType = ArcType.arcType_none
+    var  drawType = DrawType.drawType_none
     var  drawColor = UIColor.white
-    init(frame: CGRect, drawType: ButtonDrawType = .drawType_none, arcType: ButtonArcType = .arcType_none, drawColor: UIColor = .white) {
+    init(frame: CGRect, drawType: DrawType = .drawType_none, arcType: ArcType = .arcType_none, drawColor: UIColor = .white) {
         super.init(frame: frame)
         self.arcType = arcType
         self.drawType = drawType
