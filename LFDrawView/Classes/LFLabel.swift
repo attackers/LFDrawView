@@ -222,7 +222,7 @@ extension LFLabel {
     public func setupSourceTimer(_ hour: NSInteger, _ minute: NSInteger,_ second: NSInteger) {
         self.text = String(format: "%02d:%02d:%02d",hour,minute,second)
         let  baseSecond = 10
-        codeTimer.scheduleRepeating(deadline: .now(), interval: .seconds(1))
+        codeTimer.scheduleRepeating(deadline: .now() + 1, interval: .seconds(1))
         codeTimer.setEventHandler {
 
             if self.sourceSecond == 0 {
