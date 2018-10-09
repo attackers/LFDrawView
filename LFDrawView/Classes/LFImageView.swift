@@ -61,7 +61,6 @@ class LFImageView: UIImageView {
         content?.addArc(center: CGPoint(x: rect.width - 15, y: rect.height - 10), radius: 10, startAngle: CGFloat(0.0 * .pi), endAngle: CGFloat(0.5 * .pi), clockwise: false)
         
         content?.addLine(to: CGPoint(x: 15, y: rect.height - 0))
-        
         content?.addArc(center: CGPoint(x: 15, y: rect.height - 10), radius: 10, startAngle: CGFloat(0.5 * .pi), endAngle: CGFloat(1.0 * .pi), clockwise: false)
         
         content?.addLine(to: CGPoint(x: 5, y: 0))

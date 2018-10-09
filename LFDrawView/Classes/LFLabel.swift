@@ -13,6 +13,13 @@ class LFLabel: UILabel {
     var  arcType = ArcType.arcType_none
     var  drawType = DrawType.drawType_none
     var  drawColor = UIColor.white
+    var sourceHour = 0
+    var sourceMinute = 0
+    var sourceSecond = 0
+    
+    
+    let codeTimer = DispatchSource.makeTimerSource(flags: DispatchSource.TimerFlags.init(rawValue: 0), queue: DispatchQueue.global())
+
     init(frame: CGRect, drawType: DrawType = .drawType_none, arcType: ArcType = .arcType_none, drawColor: UIColor = .white) {
         super.init(frame: frame)
         self.arcType = arcType
@@ -147,7 +154,8 @@ class LFLabel: UILabel {
         
         let sList = selfTextToArray()
         
-        let baseStgRect = ("00" as NSString).boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: CGFloat(MAXFLOAT)), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: [NSFontAttributeName
+        let bStg = sList.2
+        let baseStgRect = (bStg as NSString).boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: CGFloat(MAXFLOAT)), options: NSStringDrawingOptions.usesLineFragmentOrigin, attributes: [NSFontAttributeName
             : self.font,NSForegroundColorAttributeName: UIColor.red], context: nil)
         
         let baseWidth = baseStgRect.width
@@ -186,7 +194,9 @@ class LFLabel: UILabel {
             slist?.append(f1)
             slist?.append(f2)
         }
-        
+        sourceHour = NSInteger(slist?.first ?? "00") ?? 0
+        sourceMinute = NSInteger(slist?[1] ?? "00") ?? 0
+        sourceSecond = NSInteger(slist?.last ?? "00") ?? 0
         return (slist?.first ?? "00",slist?[1] ?? "00",slist?.last ?? "00")
     }
     
@@ -207,3 +217,47 @@ class LFLabel: UILabel {
 
 }
 
+extension LFLabel {
+    
+    public func setupSourceTimer(_ hour: NSInteger, _ minute: NSInteger,_ second: NSInteger) {
+        self.text = String(format: "%02d:%02d:%02d",hour,minute,second)
+        let  baseSecond = 10
+        codeTimer.scheduleRepeating(deadline: .now(), interval: .seconds(1))
+        codeTimer.setEventHandler {
+
+            if self.sourceSecond == 0 {
+                
+                if self.sourceMinute >= 1 {
+                    self.sourceSecond = baseSecond
+                    self.sourceMinute = self.sourceMinute - 1
+                } else {
+                    
+                    if self.sourceHour > 0 {
+                        self.sourceSecond = baseSecond
+                        self.sourceMinute = baseSecond
+                        self.sourceHour = self.sourceHour - 1
+
+                    }   else {
+                        self.codeTimer.cancel()
+                    }
+                }                
+            } else {
+                self.sourceSecond = self.sourceSecond - 1
+            }
+            
+            DispatchQueue.main.async(execute: {
+                print(self.text)
+                self.text = String(format: "%02d:%02d:%02d",self.sourceHour,self.sourceMinute,self.sourceSecond)
+            })
+            
+          
+            
+        }
+        if #available(iOS 10.0, *) {
+            codeTimer.activate()
+        } else {
+            codeTimer.resume()
+            // Fallback on earlier versions
+        }
+    }
+}
