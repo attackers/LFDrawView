@@ -22,4 +22,5 @@ enum ArcType {
     case arcType_none
     case arcType_all
     case arcType_round
+    case arcType_ThreeAll
 }

@@ -37,6 +37,8 @@ class LFView: UIView {
             arcTypeAll(rect)
         case .arcType_round:
             arcTypeRound(rect)
+        case .arcType_ThreeAll:
+            break
         }
     }
     
